@@ -7,11 +7,11 @@
 	þetta tryggir að það sé notað nýjasta version af ECMAscript svo það sé notað viðeigandi reglur...
 	getur líka t.d. ekki notað breytu sem hefur ekki verið skilgreint með nafni.
 	Dæmi:
-	```javascript
+```javascript
 
-	"use strict"
-	test = 23; // error variable with no name
-	```
+"use strict"
+test = 23; // error variable with no name
+```
 ## 3. Hver er munurinn á let, var og const?
 	"var" er eldri útgáfa af "let". munurinn á þeim er að "var" hegðar sér alltaf eins og global scope á meðan "let" introduce-aði block scope sem þyðir að ef þú ert með t.d. let inní body er það orðið local scope. Í gamla daga voru slaufu svigar skraut eða hjálpar tól fyrir mannveruna að sjá hvar hlutir tilheyrðu hvort annað og það þurfti að gera function til að einangra "gera local scope".
 	"const" keyword þýðir að það sé ekki hægt að breyta því þegar það er búið skrifa í hann.
