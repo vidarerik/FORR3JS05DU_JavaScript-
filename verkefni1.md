@@ -1,6 +1,7 @@
 ## 1. Hvað er null og undefined?
 	null er úthlutað gildi. Það þýðir ekkert.
 	Undefined þýðir að breytu hefur verið lýst("Declared") en ekki skilgreint("Defined") ennþá.
+	
 ## 2. Hvað gerir 'use strict' í JavaScript kóða?
 	Use strict er nýr eiginleiki sem ECMAScript 5 hefur upp á að bjóða...
 	Það er strengur sem þú setur í JavaScript skrárnar þínar (annað hvort efst á skrá eða inní föll)
@@ -12,9 +13,17 @@
 "use strict"
 test = 23; // error variable with no name
 ```
+
 ## 3. Hver er munurinn á let, var og const?
-	"var" er eldri útgáfa af "let". munurinn á þeim er að "var" hegðar sér alltaf eins og global scope á meðan "let" introduce-aði block scope sem þyðir að ef þú ert með t.d. let inní body er það orðið local scope. Í gamla daga voru slaufu svigar skraut eða hjálpar tól fyrir mannveruna að sjá hvar hlutir tilheyrðu hvort annað og það þurfti að gera function til að einangra "gera local scope".
+	"var" er eldri útgáfa af "let".
+	Munurinn á þeim er að "var" hegðar sér alltaf eins og global scope 
+	á meðan "let" introduce-aði block scope, sem þyðir að ef þú ert með t.d. "let" keyword inní
+	body er það orðið local scope.
+	Í gamla daga voru slaufu svigar skraut eða hjálpar tól fyrir mannveruna 
+	til þess að sjá hvaða hlutir tilheyrðu hvort 
+	annað einnig þurfti líka að gera function til að einangra "gera local scope".
 	"const" keyword þýðir að það sé ekki hægt að breyta því þegar það er búið skrifa í hann.
+	
 ## 4. Endurskrifaðu eftirfarandi kóða með for lykkjunni.
 ```javascript
 let x = 9;
@@ -30,6 +39,7 @@ for(let i = 9;i >= 0; i--)
 	console.log("hello " + i);
 }
 ```
+
 ## 5. Skilgreindu sama fallið á þrjá mismunandi vegu.
 ```javascript
 function firstaFall(tala1,tala2){
@@ -43,11 +53,14 @@ let nafnlaustFall = function (tala1,tala2){
 const arrowFunc = (tala1, tala2) => { return tala1 + tala2 };
 
 ```
+
 ## 6. Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?
 ```javascript
  (function() { alert('Hello World'); })();
  ```
- Þetta hugtak kallast Immediately-Invoked Function Expression eða IIFE skammstöfun("Abbreviation"). Það keyrir strax eftir að það er búið til. Þetta mynstur er oft notað þegar reynt er að forðast að menga("Pollution") global nöfn.
+	 Þetta hugtak kallast Immediately-Invoked Function Expression eða IIFE skammstöfun("Abbreviation"). 
+	 Það keyrir strax eftir að það er búið til.
+	 Þetta mynstur er oft notað þegar reynt er að forðast að menga("Pollution") global nöfn.
 
 ## 7. Af hverju birtist 1 en ekki 10?
 ### Í hvaða röð er kóðinn keyrður í raun eftir að JS þýðandinn (e. interpreter) er búinn að fá
