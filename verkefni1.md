@@ -18,7 +18,7 @@ test = 23; // error variable with no name
 	"var" er eldri útgáfa af "let".
 	Munurinn á þeim er að "var" hegðar sér alltaf eins og global scope 
 	á meðan "let" introduce-aði block scope, sem þyðir að ef þú ert með t.d. "let" keyword inní
-	body er það orðið local scope.
+	body er það orðið local scope.Sem þýðir að allt sem er fyrir utan því scope-i geta ekki accessað það eða náð í
 	Í gamla daga voru slaufu svigar skraut eða hjálpar tól fyrir mannveruna 
 	til þess að sjá hvaða hlutir tilheyrðu hvort 
 	annað einnig þurfti líka að gera function til að einangra "gera local scope".
