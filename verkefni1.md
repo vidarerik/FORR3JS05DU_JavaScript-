@@ -67,8 +67,9 @@ console.log(a); // skilar 1
 ### Firsta lagi er það vegna þess að það function heitir það sama og breytan sem assignar það í function í staðinn
 ### Öðru lagi hoistar hann fallið sem þýðir að það sé hægt að kalla á fallið áður en það er skilgreint("Declared")
 ### bara með því að breyta eða sleppa("omit") function a() fær maður 10
+
 ### Svar við síðari spurningu hvaða röð þýðandinn keyrir
-### hann byrjar á lesa "use strict" til að apply nýjustu reglur. hoistar function b() efst í skjali síðan hoistar hann funciton a() efst ### í function body. Eftir hoistin fer hann í að skilgreina breytur í þessu tilfelli let a = 1, síaðn er að kallað("invoke") á fall b()
+### hann byrjar á lesa "use strict" til að apply nýjustu reglur. hoistar function b() efst í skjali síðan hoistar hann funciton a() efst ### í function body. Eftir hoistin fer hann í að skilgreina breytur í þessu tilfelli let a = 1, síðan er að kallað("invoke") á fall b()
 ### efst í því falli er fall a() af því að það var hoistað efst inní því sem þýðir að a = 10 er setur í fall a() og að lokum er return
 ### og fer úr falli b() og beint í console.log  sem á að skrifa út töluna 1.
 ### en með því að sleppa eða breyta nafni á fall a() verður útkoman 10.
