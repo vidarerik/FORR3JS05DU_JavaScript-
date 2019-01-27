@@ -112,3 +112,5 @@ user.age = 25;
 alert(user.age); // 25
 ```
 Hlutir sem eru skilgreindir með keywordinu **"const"** geta verið breyttir semsagt bætt við key og values...
+:school: :space_invader:
+/play trololo
