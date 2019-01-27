@@ -2,11 +2,11 @@
 ```javascript
 let person = 
 {
-nafn:"Viðar",
-kennitala:"123456-7890", 
-heimilisfang:"home1",
-heimasimi:"123-4567",
-gsm:"666-6666"
+	nafn:"Viðar",
+	kennitala:"123456-7890", 
+	heimilisfang:"home1",
+	heimasimi:"123-4567",
+	gsm:"666-6666"
 };
 ```
 #### 2. Notaðu for…in lykkjuna til að birta öll eigindin (e. property) ásamt gildum í objectinu í lið 1.
@@ -24,7 +24,7 @@ let person =
 	kennitala:"123456-7890", 
 	heimilisfang:"home1",
 	heimasimi:"123-4567",
-	gsm:"666-666",
+	gsm:"666-6666",
 	print : function printInfo(aldur){
 		return "Nafn: " + person.nafn + " \nAldur: " + aldur;
 	}
