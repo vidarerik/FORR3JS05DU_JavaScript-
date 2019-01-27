@@ -91,7 +91,7 @@ donuts.forEach(function(element) {
 });
 ```
 #### 8. Eru öll eigindi (e. properties) í sömu röð og þeim var bætt í object, rökstuddu?
-Öll **eigindi (e. properties)**  sem eru af type **Integer** *("þótt að það sé inní gæsalappir sem er væntanlega string eða char")* inní objecta eru raðaðir eftir númeratali *("lægsta talan verður alltaf efst")* frá key value en það er hægt að *"svindla"* með þvi að setja t.d. plús '+' merki eða önnur tákn til þess að sleppa við röðunaraðgerðir.
+Öll **eigindi (e. properties)**  sem eru af type **Integer** *("þótt að það sé inní gæsalappir sem er væntanlega string eða char")* inní objecta eru raðaðir eftir númeratali *("lægsta talan verður alltaf efst")* frá key value en það er hægt að *"svindla"* með því að setja t.d. plús '+' merki eða önnur tákn til þess að sleppa við röðunaraðgerðir.
 ... Hins vegar, ef key er ekki **heiltala**, þá eru þau skráð í **sköpunarfyrirmæli**(Creation order)
 
 #### 9. Útskýrðu hvað eftirfarandi kóði gerir.
