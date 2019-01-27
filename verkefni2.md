@@ -101,7 +101,7 @@ let admin = user;
 ```
 Á bakvið tjöldin er tilbúinn **Copy constructor** sem er hannaður í c++  *(fer eftir hvaða browser er notaður t.d. mozilla notar java)* svo að þetta virki,
 Þegar hlutur er afritaður þá er tilvísunin *(Reference)* afrituð en ekki hluturinn *(Object)* sjálfur,
-Eða í öðrum orðum er það verið að afrita **addressuna** með **pointera**.
+Eða í öðrum orðum er það verið að afrita **addressuna** með  hjálp **pointera**.
 
 #### 10. Afhverju virkar eftirfarandi?
 ```javascript
