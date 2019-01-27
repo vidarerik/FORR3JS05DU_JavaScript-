@@ -91,7 +91,7 @@ donuts.forEach(function(element) {
 });
 ```
 #### 8. Eru öll eigindi (e. properties) í sömu röð og þeim var bætt í object, rökstuddu?
-Öll **eigindi (e. properties)**  sem eru af type **Integer** *("þótt að það sé inní gæsalappir sem er væntanlega string eða char")* inní objecta eru raðaðir eftir númeratali *("lægsta talan verður alltaf efst")* frá key value en það er hægt að *"svindla"* með þvi að setja t.d. plús '+' merki eða önnur tákn til þess að sleppa við raðarnir.
+Öll **eigindi (e. properties)**  sem eru af type **Integer** *("þótt að það sé inní gæsalappir sem er væntanlega string eða char")* inní objecta eru raðaðir eftir númeratali *("lægsta talan verður alltaf efst")* frá key value en það er hægt að *"svindla"* með þvi að setja t.d. plús '+' merki eða önnur tákn til þess að sleppa við röðunaraðgerðir.
 ... Hins vegar, ef key er ekki **heiltala**, þá eru þau skráð í **sköpunarfyrirmæli**(Creation order)
 
 #### 9. Útskýrðu hvað eftirfarandi kóði gerir.
@@ -101,7 +101,7 @@ let admin = user;
 ```
 Á bakvið tjöldin er tilbúinn **Copy constructor** sem er hannaður í c++  *(fer eftir hvaða browser er notaður t.d. mozilla notar java)* svo að þetta virki,
 Þegar hlutur er afritaður þá er tilvísunin *(Reference)* afrituð en ekki hluturinn *(Object)* sjálfur,
-Eða í öðrum orðum er það verið að afrita addressuna með pointera
+Eða í öðrum orðum er það verið að afrita **addressuna** með **pointera**.
 
 #### 10. Afhverju virkar eftirfarandi?
 ```javascript
