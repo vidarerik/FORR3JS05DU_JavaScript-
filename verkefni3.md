@@ -1,7 +1,7 @@
 ### 1. Útskýrðu hvernig objectar tengjast í JavaScript. (0.5%)
   Þegar það er átt við eða spurt hvernig objectar tengjast í javascript er það þegar það er búið til object segjum það heitir testobject
   það testobject tengist erfir(e.inherit) aðferðir sem object hefur. Það er hægt að sjá \__proto__ er líka í því sem tengist fleirri
-  objecta sem erfa fleirri aðferðir og svo framvegis. Dýpsta level er null og næst dýpsta level inniheldur nokkrar aðferðir eins og toString();
+  objecta sem erfa fleirri aðferðir og svo framvegis. Dýpsta level er `null` og næst dýpsta level inniheldur nokkrar aðferðir eins og `toString()`
   
 ### 2. Útskýrðu kóðann línu fyrir línu. (0.5%)
 ```javascript
