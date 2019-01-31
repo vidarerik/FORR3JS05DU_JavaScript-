@@ -25,27 +25,71 @@ function Geimflaug(speed = 10, life = 10) {
   this.life = life;
 }
 
-let Dhuvas = new Geimflaug(); // fær upphafsgildi
-let Bhatath = new Geimflaug();
-let Iv\'eks = new Geimflaug(); 
+Geimflaug.prototype.fly = function() {
+  return this.speed++;
+};
+
+let Dhuvas = new Geimflaug(); // fær upphafsgildi f1
+let Bhatath = new Geimflaug(); // f2
+let Caugvon = new Geimflaug(); // f3
+
+
+
 ```
 ##### b) Gefðu geimflaugunum mismunandi speed gildi.
 ```javascript
-let Caugvon = new Geimflaug(30);
-let Bhatath = new Geimflaug(657);
-let Dhuvas = new Geimflaug(42);
+Dhuvas.speed = 30;
+Bhatath.speed = 657;
+Caugvon.speed = 42;
 ```
 ##### c) Notaðu Prototype til að bæta við nýrri method fly sem hækkar gildið
 ##### speed um 1. Þetta fá allar flaugarnar (f1,f2,f3).
 ```javascript
-Geimflaug.prototype.speed = function() {
+Geimflaug.prototype.fly = function() {
   return this.speed++;
 };
 ```
 ##### d) Láttu flaug f1 hafa setLife() sem hækkar life um 1. Þessa aðferð eiga hinar
 ##### flaugarnar ekki að hafa.
+```javascript
+Dhuvas.setLife = function () {
+  return this.life++; //Pre incrementation virkar ekki
+};
+```
 
 ##### 4. Gerðu það sama (sambærilegt) og síðasta lið en með notkun class. Notaðu
 ##### eftir þörfum; constructor, get, set, static, extends, super, mix-ins. (1.5%)
+```javascript
+class Geimflaug {
 
+  constructor(speed = 10, life = 10) {
+    // invokes the setter
+    this.speed = speed;
+    this.life = life;
+  }
+
+  get speed() {
+    return this._speed;
+  }
+  
+  get life() {
+    return this._life;
+  }
+
+  set speed(value) {
+    this._speed = value;
+  }
+  
+  set life(value) {
+    this._life = value;
+  }
+
+}
+
+let Dhuvas = new Geimflaug(); // fær upphafsgildi
+let Bhatath = new Geimflaug();
+let Caugvon = new Geimflaug(); 
+
+
+```
 ##### 5. Hver er munurinn á Class og Prototype? (0.5%)
