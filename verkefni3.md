@@ -29,16 +29,10 @@ function Geimflaug(speed = 10, life = 10) {
   this.life = life;
 }
 
-Geimflaug.prototype.fly = function() {
-  return this.speed++;
-};
 //Fá upphafsgildi
 let Dhuvas = new Geimflaug(); // f1 
 let Bhatath = new Geimflaug(); // f2
 let Caugvon = new Geimflaug(); // f3
-
-
-
 ```
 
 
@@ -54,15 +48,17 @@ Caugvon.speed = 42;
 ```javascript
 //Fall sem hækkar gildi um einn fyrir allar flaugar ef keyrt(e.invoke)
 Geimflaug.prototype.fly = function() {
-  return this.speed++;
+	 preInc = this.speed++;// pre incrementeation fyrir display
+  return this.constructor.name + " speed incremented by one: " + ++preInc;
 };
 ```
 ##### d) Láttu flaug f1 hafa setLife() sem hækkar life um 1. Þessa aðferð eiga hinar
 ##### flaugarnar ekki að hafa.
 ```javascript
-//Gef f1(dhuvas) fallið sem hækkar líf hans um eitt
+//Gef f1(Dhuvas) fallið sem hækkar líf hans um eitt
 Dhuvas.setLife = function () {
-  return this.life++; //Pre incrementation virkar ekki
+  preInc = this.life++;
+  return ++preInc;
 };
 ```
 
@@ -77,20 +73,20 @@ class Geimflaug {
     this.life = life;
   }
 
-  get speed() {
-    return this._speed;
+  get getSpeed() {
+    return this.speed;
   }
   
-  get life() {
-    return this._life;
+  get getLife() {
+    return this.life;
   }
 
-  set speed(value) {
-    this._speed = value;
+  set setSpeed(value) {
+    this.speed = value;
   }
   
-  set life(value) {
-    this._life = value;
+  set setLife(value) {
+    this.life = value;
   }
 
 }
@@ -98,8 +94,6 @@ class Geimflaug {
 let Dhuvas = new Geimflaug(); // fær upphafsgildi
 let Bhatath = new Geimflaug();
 let Caugvon = new Geimflaug(); 
-
-
 ```
 ##### 5. Hver er munurinn á Class og Prototype? (0.5%)
 
