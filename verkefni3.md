@@ -17,8 +17,15 @@ let bookObject = new Book(12345); /* Búa til instance af Book með því
                                      að nota smiðinn og hann hefur einnig aðferina getIsbn
                                      og hann fær gildið 12345 int */
 ```
-
-
+Það er hægt að hafa method inní function constructor en það eyðir miklu meira minni sem er ekki practical
+```javascript
+function Book(isbn) { //Fall Smiður(e.function constructor) skilgreindur (e.defined)
+	this.isbn = isbn;
+	this.getIsbn = function () { //bad habit
+		return "Isbn is " + this.isbn;
+	};
+}
+```
 ### 3. Prototypal pattern (2%)
 ##### a) Búðu til þrjár geimflauga objecta (f1,f2,f3) með function smið sem hafa mismunandi heiti. 
 ##### Geimflaugarnar eiga einnig að hafa eigindin speed og life með upphafsgildinu 10.
