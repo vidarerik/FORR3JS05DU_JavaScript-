@@ -110,5 +110,5 @@ let Caugvon = new Geimflaug();
 Munurinn á *klasa* og *protoype* er ekki svo mikill nema syntaxinn er öðruvísi(hvernig hann er skrifaður/útfærður).\
 Ef það er notað `protoype` aðferðina þarf að nota *function constructor* first og aðskilja síðan method frá body að utan.\
 Allt sem er mótað frá þann *constructor* erfa aðferðina sem tilheyra því nema annað sé tekið fram. \
-Það er líka hægt að búa til instance af *klasa* með keyword "**new**" sem er athugið ekki rétt eða mælt með því þá er staðsetning komin utan klasan yfir í window(sem er ekki rétt) þannig að "**new**" er mikilvægt í þessu tilfelli.\
-En með því að nota `Class` hins vegar þá kemur ***error*** ef það er ekki notað "**new**" keyword.
+Það er líka hægt að búa til instance af *klasa* með keyword **new** sem er athugið rétt og er mælt með, ef það er ekki **new** keyword þá er verið að vinna fyrir utan klasan yfir í window(sem er ekki rétt) þannig að "**new**" er mikilvægt í þessu tilfelli.\
+En með því að nota `Class` hins vegar þá kemur ***error*** ef það er ekki notað **new** keyword.
