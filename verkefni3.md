@@ -95,12 +95,45 @@ class Geimflaug {
   set setLife(value) {
     this.life = value;
   }
+  fly() {
+    	let preInc = this.speed++;// pre incrementeation fyrir display
+  	return this.constructor.name + " speed incremented by one: " + ++preInc;
+  }
 
+}
+
+class Geimvera extends Geimflaug {
+    constructor(speed, life, name) {
+        super(speed, life);
+        this.name = name;
+    }
+	greet() {
+    return `${this.name} says hello.`;
+	}
 }
 
 let Dhuvas = new Geimflaug(); // fær upphafsgildi
 let Bhatath = new Geimflaug();
 let Caugvon = new Geimflaug(); 
+
+Dhuvas.setLife = 42; //breyta líf hjá f1
+
+Dhuvas.getLife; // ná í líf gildi
+
+Dhuvas.fly(); // hækka speed gildi um 1
+Bhatath.fly(); // hækka speed gildi um 1
+Caugvon.fly(); // hækka speed gildi um 1
+
+let alien = new Geimvera(1, 2, "tama");
+
+alien.greet();
+"tama says hello."
+
+alien.life;
+2
+alien.fly();
+"Geimvera speed incremented by one: 2"
+
 ```
 ##### 5. Hver er munurinn á Class og Prototype? (0.5%)
 
