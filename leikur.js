@@ -21,7 +21,7 @@ backGroundImage.onload = function () {
   // syna bakgrunnsmynd
   backGroundReady = true;
 };
-backGroundImage.src = "images/background.png";
+backGroundImage.src = "background.png";
 // Hlada inn spilara
 let characterReady = false;
 let characterImage = new Image();
@@ -29,7 +29,7 @@ characterImage.onload = function () {
   // Syna spilara
   characterReady = true;
 };
-characterImage.src = "images/character.png";
+characterImage.src = "character.png";
 
 // Hlada inn stjornu eda slikt
 let gnomeReady = false;
@@ -38,7 +38,7 @@ gnomeImage.onload = function () {
   // etc
   gnomeReady = true;
 };
-gnomeImage.src = "images/gnome.png";
+gnomeImage.src = "gnome.png";
 // Hlada inn blod
 let bloodReady = false;
 let bloodImage = new Image();
@@ -46,7 +46,7 @@ bloodImage.onload = function () {
   // etc
   bloodReady = true;
 };
-bloodImage.src = "images/Blood.png";
+bloodImage.src = "Blood.png";
 // By leikja hluti (e.objects)
 let character = {
   speed: 100
