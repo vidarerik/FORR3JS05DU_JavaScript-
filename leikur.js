@@ -6,6 +6,7 @@
 // By til striga(e. canvas) umhverfi til ad embedda i html
 let canvas = document.createElement("canvas");
 let ctx = canvas.getContext("2d");
+canvas.setAttribute('style', "display: block; margin-left: auto; margin-right: auto; border:6px groove gray");
 let isStart = false;
 canvas.width = 512;
 canvas.height = 480;
