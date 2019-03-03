@@ -47,7 +47,7 @@ bloodImage.onload = function () {
   // etc
   bloodReady = true;
 };
-bloodImage.src = "Blood.png";
+bloodImage.src = "blood.png";
 // By leikja hluti (e.objects)
 let character = {
   speed: 100
@@ -129,7 +129,7 @@ let render = function () {
     ctx.fillStyle = "#f7e6e6";
     ctx.font = "50px Ariel";
     ctx.textAlign = "left";
-    ctx.fillText("Leikur endar!", 200, 220);
+    ctx.fillText("Leikur endar!", 150, 120);
   }
   
 };
